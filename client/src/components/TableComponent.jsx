@@ -382,7 +382,7 @@ const TableWithSearchComponent = ({ links, refreshLinks }) => {
                     </td>
                     <td>
                       <span className="copy-button">
-                        {`http://localhost:3000/api/user/${row.shortId}`.slice(
+                        {`/api/user/${row.shortId}`.slice(
                           0,
                           7
                         )}
@@ -390,8 +390,8 @@ const TableWithSearchComponent = ({ links, refreshLinks }) => {
                         <span
                           onClick={() => {
                             navigator.clipboard.writeText(
-                              `http://localhost:3000/api/user/${row.shortId}`
-                            );
+                              `https://cuvette-final-project-2.vercel.app/api/user/${row.shortId}`
+                            )
                             Toastify({
                               text: `✓ Link Copied`,
                               duration: 3000,
