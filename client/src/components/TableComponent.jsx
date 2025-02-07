@@ -390,7 +390,7 @@ const TableWithSearchComponent = ({ links, refreshLinks }) => {
                         <span
                           onClick={() => {
                             navigator.clipboard.writeText(
-                              `https://cuvette-final-project-2.vercel.app/api/user/${row.shortId}`
+                              `https://cuvette-final-project-2-backend.vercel.app/api/user/${row.shortId}`
                             )
                             Toastify({
                               text: `✓ Link Copied`,
