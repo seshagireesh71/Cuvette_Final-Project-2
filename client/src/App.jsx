@@ -51,5 +51,4 @@ const App = () => {
     </div>
   );
 };
-react.post("https://cuvette-final-project-2-api.vercel.app");
 export default App;
